@@ -1,4 +1,5 @@
 # Ghr3pos
+ [![Build Status](https://travis-ci.com/ianhundere/ghr3pos.svg?branch=master)](https://travis-ci.com/ianhundere/ghr3pos)
 
 Get the last 3 GitHub releases and/or pull requests of a repository.
 Requires the [Requests](http://docs.python-requests.org/) library. Should work on Python 3.6+.
