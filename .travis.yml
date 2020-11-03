@@ -7,9 +7,10 @@ python:
 # command to install dependencies
 install:
   - pip freeze
-  - pip install --upgrade . pytest-vcr pytest pytest-cov
+  - pip install .
+  - pip install --upgrade .[test]
   - pip freeze
 # command to run tests
 script:
   - pytest
-  -  bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
