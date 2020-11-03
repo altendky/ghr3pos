@@ -7,7 +7,7 @@ python:
 # command to install dependencies
 install:
   - pip freeze
-  - pip install --upgrade . pytest-vcr pytest
+  - pip install --upgrade . pytest-vcr pytest pytest-cov
   - pip freeze
 # command to run tests
 script:
