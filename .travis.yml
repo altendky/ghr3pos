@@ -7,10 +7,10 @@ python:
 # command to install dependencies
 install:
   - pip freeze
-  - pip install .
   - pip install --upgrade .[test]
   - pip freeze
 # command to run tests
 script:
   - pytest
+  - pytest --cov-report annotate
   - bash <(curl -s https://codecov.io/bash)
