@@ -72,7 +72,6 @@ def test_main_exit(capsys):
         [sys.executable, '-m', ghr3pos.__name__],
         encoding='utf8',
         capture_output=True,
-        check=False,
     )
     assert v.returncode == 2
     assert v.stdout == ''
