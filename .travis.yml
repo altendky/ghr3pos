@@ -6,7 +6,7 @@ python:
   - "3.9"
 # command to install dependencies
 install:
-  - pip install .
+  - pip3 install .
 # command to run tests
 script:
   - pytest
