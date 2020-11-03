@@ -6,7 +6,9 @@ python:
   - "3.9"
 # command to install dependencies
 install:
-  - pip install . && pip install pytest-vcr
+  - pip freeze
+  - pip install --upgrade . pytest-vcr pytest
+  - pip freeze
 # command to run tests
 script:
   - pytest
